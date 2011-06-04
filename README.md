@@ -27,6 +27,8 @@ Find the Apache configuration file for the virtual hosts where you want to run O
                     Allow from all
             </Directory>
 	</VirtualHost>
+After installing OAuthSSO, you can access the homepage of your installation, which contains some information and a few links to the test services. The url of an installation can be e.g.:
+	http://connect.example.com/oauthsso
 
 # License
 OAuthSSO is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with OAuthSSO. If not, see http://www.gnu.org/licenses.
