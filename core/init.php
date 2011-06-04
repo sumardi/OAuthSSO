@@ -14,5 +14,12 @@
  * You should have received a copy of the GNU General Public License along with OAuth. 
  * If not, see <http://www.gnu.org/licenses/>
  */
+define("BASE_PATH", dirname(__FILE__));
+define("DS", DIRECTORY_SEPARATOR);
+define("LIBS_PATH", BASE_PATH . DS . "libs");
+
+if(!defined("INCLUDED")) define("INCLUDED", true);
+
+require_once(BASE_PATH . DS . "config.php");
 
 ?>

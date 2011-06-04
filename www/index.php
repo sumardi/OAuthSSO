@@ -14,10 +14,17 @@
  * You should have received a copy of the GNU General Public License along with OAuth. 
  * If not, see <http://www.gnu.org/licenses/>
  */
-switch($_SERVER['PATH_INFO']) {
+ob_start();
+require_once("../core/init.php");
+
+switch($_GET['opt']) {
+	case 'authorize':
+		echo "Authorize";
+	break;
+	
 	default:
 		header("HTTP/1.1 500 Internal Server Error");
 		header("Content-Type: text/plain");
-		echo "Unknown request.");
+		echo "Unknown request.";
 }
 ?>
