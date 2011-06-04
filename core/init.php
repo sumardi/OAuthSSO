@@ -21,5 +21,15 @@ define("LIBS_PATH", BASE_PATH . DS . "libs");
 if(!defined("INCLUDED")) define("INCLUDED", true);
 
 require_once(BASE_PATH . DS . "config.php");
+require_once(LIBS_PATH . DS . "smarty" . DS . "Smarty.class.php");
+
+$tpl = new Smarty();
+$tpl->cache_dir = "./cache";
+$tpl->compile_dir = "./cache/templates_c";
+$tpl->template_dir = array(BASE_PATH . DS . "templates");
+
+// assign default variables
+$tpl->assign("BASE_URL", BASE_URL);
+$tpl->assign("TITLE", "OAuth Single Sign-On");
 
 ?>

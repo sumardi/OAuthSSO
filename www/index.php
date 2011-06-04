@@ -17,9 +17,19 @@
 ob_start();
 require_once("../core/init.php");
 
-switch($_GET['opt']) {
+$opt = isset($_GET['opt']) ? $_GET['opt'] : "authorize";
+
+switch($opt) {
 	case 'authorize':
-		echo "Authorize";
+		$tpl->display("login.tpl");
+	break;
+	
+	case 'logon':
+		echo "Logon";
+	break;
+	
+	case 'admin':
+		echo 'Admin';
 	break;
 	
 	default:
