@@ -13,8 +13,7 @@ A single sign-on platform using OAuth.
 </ul>
 <h2>Configuring Apache</h2>
 Find the Apache configuration file for the virtual hosts where you want to run OAuthSSO. The configuration may look like this:<br />
-	<code>
-	<VirtualHost *>
+	<VirtualHost *:80>
 	        ServerName connect.example.com
 	        DocumentRoot /var/www/connect.example.com
 	
@@ -27,7 +26,6 @@ Find the Apache configuration file for the virtual hosts where you want to run O
                     Allow from all
             </Directory>
 	</VirtualHost>
-	</code>
 <h1>License</h1>
 OAuthSSO is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with OAuthSSO. If not, see http://www.gnu.org/licenses.
 <h1>Authors</h1>
