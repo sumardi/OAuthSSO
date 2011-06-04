@@ -7,8 +7,8 @@ A single sign-on platform using OAuth.
 * Web server capable of executing PHP scripts
 * PHP version >= 5.2.0
 * Support of for the following PHP extensions:
-	** PDO
-	** OAuth
+	* PDO
+	* OAuth
 
 ## Configuring Apache
 Find the Apache configuration file for the virtual hosts where you want to run OAuthSSO. The configuration may look like this:
