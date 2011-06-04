@@ -9,6 +9,7 @@ A single sign-on platform using OAuth.
 * Support of for the following PHP extensions:
 	* PDO
 	* OAuth
+	* Rewrite
 
 ## Configuring Apache
 Find the Apache configuration file for the virtual hosts where you want to run OAuthSSO. The configuration may look like this:
@@ -22,7 +23,7 @@ Find the Apache configuration file for the virtual hosts where you want to run O
 	        
 	        <Directory "/var/www/connect.example.com">
                     Options Indexes FollowSymLinks MultiViews
-                    AllowOverride None
+                    AllowOverride All
                     Order allow,deny
                     Allow from all
             </Directory>
